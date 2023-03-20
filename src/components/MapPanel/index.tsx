@@ -6,6 +6,7 @@ const Index = () => {
   const [lng, setLng] = useState(54.37585762735543);
   const [lat, setLat] = useState(24.45677614934833);
   return (
+
     <Map
       mapboxAccessToken="pk.eyJ1IjoiaWZyYXRrYXppIiwiYSI6ImNsZmdkMTFocjE1Y20zdG56cXRncnR5cG0ifQ.avhOkXsuHDWB3vonRBGlng"
       style={{
@@ -18,9 +19,9 @@ const Index = () => {
       mapStyle="mapbox://styles/mapbox/streets-v9"
     >
       <Marker longitude={lng} latitude={lat} />
-      <NavigationControl position="top-left" />
+      <NavigationControl position="top-right" />
       <GeolocateControl />
-      <FullscreenControl position="top-left" />
+      <FullscreenControl position="top-right" />
     </Map>
   );
 };
