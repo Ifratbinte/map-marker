@@ -49,7 +49,7 @@ function MapMarker() {
       <Autocomplete
         id="map-marker"
         sx={{ width: 750 }}
-        getOptionLabel={(option) => (typeof option === "string" ? option : option.city)}
+        getOptionLabel={(option) => (typeof option === "string" ? option : option.address)}
         filterOptions={(option, state) => {
           console.log(option, state);
           return option.filter((option) => {
@@ -73,7 +73,7 @@ function MapMarker() {
         onInputChange={(event, newInputValue) => {
           setInputValue(newInputValue);
         }}
-        renderInput={(params) => <TextField {...params} label="Add a location" fullWidth />}
+        renderInput={(params) => <TextField {...params} label="Add a location" fullWidth />}       
         renderOption={(props, option) => {
           return (
             <li {...props}>
