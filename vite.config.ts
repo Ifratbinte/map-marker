@@ -8,8 +8,6 @@ export default defineConfig({
     alias: {
       "#assets": resolve(__dirname, "./src/assets/"),
       "#components": resolve(__dirname, "./src/components/"),
-      "#routes": resolve(__dirname, "./src/routes/"),
-      "#store": resolve(__dirname, "./src/store/"),
     },
   },
   plugins: [react()],
